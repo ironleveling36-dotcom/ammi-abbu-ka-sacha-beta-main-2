@@ -1,0 +1,11 @@
+node_modules
+.git
+.env
+*.mp4
+*.png
+*.bak
+*.audit_bak
+scratch
+data
+*.mjs
+test_*.js

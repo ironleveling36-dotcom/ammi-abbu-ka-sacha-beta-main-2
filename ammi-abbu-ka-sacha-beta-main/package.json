@@ -1,0 +1,52 @@
+{
+  "name": "ammi-abbu-ka-sacha-beta",
+  "version": "2.0.0",
+  "description": "Ammi Abbu Ka Sacha Beta — Live Swiggy Address Fetching, Cart Sync & Slot Order Bot",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test_comprehensive_audit_suite.mjs",
+    "test:round19": "node test_v108_deployproof_tracking_autopay.mjs",
+    "test:round20": "node test_v109_utr_asli_paisa.mjs",
+    "test:round21": "node test_v110_tracking_and_sms_truth.mjs",
+    "test:round22": "node test_v111_login_id_durability.mjs",
+    "test:round23": "node test_v112_utr_fetch_and_credit.mjs",
+    "test:round24": "node test_v113_no_data_erase.mjs",
+    "test:round25": "node test_v114_utr_truth.mjs",
+    "test:round26": "node test_v115_durability_doctor.mjs",
+    "test:round27": "node test_v116_premium_look.mjs",
+    "test:round28": "node test_v117_reference_visual_system.mjs",
+    "test:round29": "node test_v118_one_page_no_lecture.mjs",
+    "test:round30": "node test_v119_visual_qa_fixes.mjs",
+    "test:round31": "node test_v120_accounts_reference_and_copy_json.mjs",
+    "test:round32": "node test_v121_five_minute_verify_and_share_link.mjs",
+    "test:round33": "node test_v122_round33_payment_actions_bill_speed_filters.mjs",
+    "test:round34": "node test_v123_round34_bill_faster_pay_window.mjs",
+    "test:round35": "node test_v124_round35_cancel_and_consistent_bill.mjs",
+    "preview:miniapp": "node preview-miniapp.mjs",
+    "shots:miniapp": "node tools/screenshot-miniapp.mjs",
+    "test:miniapp-layout": "node tools/verify-miniapp-layout.mjs",
+    "test:live": "node test_live_address_and_cart_e2e.mjs",
+    "test:guards": "node run_guards.mjs",
+    "test:pro": "node --test test_v87_miniapp_security_and_flow.mjs test_v88_checkout_safety.mjs test_v89_provider_faults.mjs test_v90_miniapp_ui.mjs test_v124_chat_miniapp.mjs test_v125_quick_bill.mjs tests/miniapp-design-system.test.mjs tests/miniapp-shared-access.test.mjs tests/miniapp-coupon-freecash.test.mjs",
+    "test:chat-handoff": "node --test test_v124_chat_miniapp.mjs test_v125_quick_bill.mjs",
+    "test:lazy": "node test_v40_lazy_boss_autopilot_e2e.mjs",
+    "manual:create": "node manual-account-creator.js",
+    "local:autopilot": "node local-autopilot.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "jsqr": "^1.4.0",
+    "puppeteer-core": "^25.16.0",
+    "qrcode": "^1.5.4",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@railway/cli": "^5.69.0",
+    "acorn": "^8.19.0",
+    "acorn-walk": "^8.3.5",
+    "jsdom": "^26.1.0",
+    "pngjs": "^5.0.0"
+  }
+}

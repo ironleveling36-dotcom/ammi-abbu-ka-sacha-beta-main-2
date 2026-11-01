@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c2035">
+  <title>Order Placer · Mini App</title>
+  <link rel="stylesheet" href="/pro/style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="/pro/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" type="button" data-action="nav" data-tab="accounts" aria-label="Order Placer home">
+        <span class="brand-copy"><strong>ORDER PLACER</strong></span>
+      </button>
+      <button class="account-chip" type="button" data-action="nav" data-tab="accounts" id="account-chip"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 20a5 5 0 0 0-10 0"/><circle cx="12" cy="8.5" r="3.4"/></svg><span id="account-chip-text">Account</span></button>
+      <button class="theme-button" type="button" data-action="theme" aria-label="Switch to dark theme" aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.7 14a8 8 0 0 1-10.7-10.7A8.5 8.5 0 1 0 20.7 14Z"/></svg></button>
+    </header>
+    <div id="connection-notice" class="connection-notice" hidden></div>
+    <main id="content" tabindex="-1" aria-live="polite"><div class="skeleton-hero" aria-hidden="true"></div><div class="skeleton-list" aria-hidden="true"><div class="skeleton-row"><span class="skeleton-tile"></span><span class="skeleton-copy"><span class="skeleton-line"></span><span class="skeleton-line short"></span></span></div><div class="skeleton-row"><span class="skeleton-tile"></span><span class="skeleton-copy"><span class="skeleton-line"></span><span class="skeleton-line short"></span></span></div></div><p class="sr-only">Preparing your space…</p></main>
+    <div id="cart-dock"></div>
+    <nav class="bottom-nav" id="bottom-nav" aria-label="Main navigation"></nav>
+    <div id="toast" role="status" aria-live="polite" hidden></div>
+  </div>
+</body>
+</html>

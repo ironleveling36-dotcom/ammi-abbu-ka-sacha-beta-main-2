@@ -1,0 +1,36 @@
+services:
+  - type: worker
+    name: ammi-abbu-ka-sacha-beta
+    runtime: docker
+    plan: starter
+    region: singapore
+    branch: main
+    autoDeploy: true
+    dockerfilePath: ./Dockerfile
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: BOT_TOKEN
+        sync: false
+      - key: BOSS_ID
+        value: "6484999726"
+      - key: BOSS_SECRET
+        sync: false
+      - key: SIMPLE_CHAT_MODE
+        value: "1"
+      - key: GITHUB_REPO_SLUG
+        value: "hulm0408/ammi-abbu-ka-sacha-beta"
+      - key: GITHUB_VAULT_TOKEN
+        sync: false
+      - key: VAULT_ENCRYPTION_KEY
+        sync: false
+      - key: HEADLESS
+        value: "true"
+      - key: PUPPETEER_EXECUTABLE_PATH
+        value: "/usr/bin/chromium"
+    disk:
+      name: data
+      mountPath: /app/data
+      sizeGB: 1

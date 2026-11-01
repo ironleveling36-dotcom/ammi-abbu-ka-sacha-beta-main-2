@@ -1,0 +1,9 @@
+node_modules
+.git
+.env
+*.mp4
+*.png
+*.bak
+*.audit_bak
+scratch
+screen-20261018-160718-1792319780720.mp4

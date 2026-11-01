@@ -1,0 +1,17 @@
+{
+  "config": {
+    "totalSlots": 9,
+    "slotsLeft": 9,
+    "bossIds": [6484999726],
+    "familyMembers": {},
+    "accounts": {},
+    "deletedAccounts": {}
+  },
+  "sessionVault": {},
+  "orders": {},
+  "drafts": {},
+  "bossState": null,
+  "userStates": {},
+  "auditLog": [],
+  "waf": {}
+}
